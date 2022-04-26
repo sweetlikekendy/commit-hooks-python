@@ -12,6 +12,11 @@ repos:
       - id: autopep8
   - repo: local
     hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: python
+        types: [python]
       - id: unittest
         name: unittest
         entry: python -m unittest test_calc.py
