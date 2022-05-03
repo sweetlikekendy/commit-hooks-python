@@ -1,4 +1,6 @@
-# Python
+# Python - Commit Linting with Unit Testing
+
+Basic example repository to set-up `pre-commit` with `commitlint` and `unittest`. _Optional: Python formatter (`autopep8`) and linting (`pylint`)._
 
 ## Set-up guide
 
@@ -15,6 +17,13 @@ source venv/Scripts/activate
 # install python modules
 pip install -r requirements.txt
 
-# install pre-commit
+# install pre-commit hooks
 pre-commit install
+
+# install commitlint hook
+pre-commit install --hook-type commit-msg
 ```
+
+## Optional
+
+Add/edit `.pylintrc` for Python linting.
