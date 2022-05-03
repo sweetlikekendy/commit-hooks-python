@@ -24,6 +24,8 @@ pre-commit install
 pre-commit install --hook-type commit-msg
 ```
 
+After you staged your changes and commit, unit tests will run, then `commitlint`. If either fail, then the commit will not go through until the errors have been resolved.
+
 ## Optional
 
 Add/edit `.pylintrc` for Python linting.
